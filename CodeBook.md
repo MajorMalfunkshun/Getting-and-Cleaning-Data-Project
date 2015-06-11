@@ -4,12 +4,10 @@ Getting and Cleaning Data (Coursera). Course Project Codebook
 
 ## Original Data
 
-There original data comes from the smartphone accelerometer and gyroscope 3-axial raw signals, 
-which have been processed using various signal processing techniques to measurement vector consisting
-of 561 features.
+There original data represents data collected from the accelerometer and gyroscope 3-axial raw signals from the Samsung Galaxy S smartphone.  It contains measurements of 561 features.
 
-- [source](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
-- [description](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
+- [Original Source](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
+- [Data Set Description](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 
 ## Data sets
