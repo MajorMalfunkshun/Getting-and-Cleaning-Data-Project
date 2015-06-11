@@ -76,7 +76,7 @@ write.table(finalresults, file = "alldata.txt", row.name=FALSE)
 
 ## Use the group by function to get a grouping by subjed, activity
 ## and the mean of the rest of the numerical fiels in the set.
-tidyData <- group_by(finalresults, subjectid, activityname) %>% summarise_each(funs(mean))
+tidyData <- ddply(finalresults, .(subjectid, activityname), function(x) colMeans(x[, 3:68]))
 
 # Write the final result set to a file
 write.table(tidyData, file = "tidydata.txt", row.name=FALSE)
