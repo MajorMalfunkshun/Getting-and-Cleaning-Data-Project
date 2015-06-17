@@ -50,7 +50,7 @@ Original variable names were modified in the following way:
  'fBodyAcc-mean()-Y' | 'freq-bodyacc-mean-y'
  'fBodyAcc-mean()-Z' | 'freq-bodyacc-mean-z'
  
- ### Methodology
+ ## Methodology
  
  1. Read in the three files for the x, y and suject for test and then train, resulting in three data tables for each.
  2. Read the features and activity labels, into to additional data tables
