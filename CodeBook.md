@@ -49,3 +49,18 @@ Original variable names were modified in the following way:
  'fBodyAcc-mean()-X' | 'freq-bodyacc-mean-x'
  'fBodyAcc-mean()-Y' | 'freq-bodyacc-mean-y'
  'fBodyAcc-mean()-Z' | 'freq-bodyacc-mean-z'
+ 
+ ### Methodology
+ 
+ 1. Read in the three files for the x, y and suject for test and then train, resulting in three data tables for each.
+ 2. Read the features and activity labels, into to additional data tables
+ 3. Rowbind the x, y and subject tables for training and test into three new data tables.
+ 4. Colbind the merged table and subject table into merged_sub_act
+ 5. Rename the columns in activitylables (activityid, activityname) and mergedsubj (activityid, subjectid)
+ 6. Merget the two data tables togeher on activityid
+ 7. Rename the columns in the merged data based on a vector of values from the V2 columns of features
+ 8. Extract only the columns for mean and std based on a regular expression
+ 9. Colbind the subject id and activity labels to the extracted columns to get finalresults
+ 10. Rename the columsn in finalresults to clean them up
+ 11. Write the results to a file.
+ 12. Use ddply to apply the means function over the extracted columns to create a tidy data set.
