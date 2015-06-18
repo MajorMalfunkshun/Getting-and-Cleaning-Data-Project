@@ -18,4 +18,4 @@ x_train.txt, y_train.txt, subject_test.txt
 ###Other Files:
 features.txt: contains the values that will become the column labels
 
-activity_labels: contains the id and label for each activity type (WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING)
+activity_labels: contains the id and label (descriptive activity name) (WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING)
