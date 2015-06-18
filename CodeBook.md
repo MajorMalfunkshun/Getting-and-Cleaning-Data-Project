@@ -15,12 +15,12 @@ There original data represents data collected from the accelerometer and gyrosco
 ### Raw data set
 
 The raw dataset was created using the following regular expression to filter out the columns as required
-in the project assignment only those measurements of mean or standard deviation.
+in the project assignment to only those measurements of mean or standard deviation.
 
-`grep("-(mean|std)\\(\\)"`
+Regular Expression:  `grep("-(mean|std)\\(\\)"`
 
 This results in selecting only 66 columns from the original data set.
-Subject identifiers `subjectid` and activity labels 'activityname' were added as additional colums
+Subject identifiers `subjectid` and activity labels `activityname` were added as additional colums
 to the dataset, resulting in a total of 68 columns in the raw data set.
 
 The training and test subsets of the original dataset were combined to produce final raw dataset.
@@ -28,7 +28,7 @@ The training and test subsets of the original dataset were combined to produce f
 ### Tidy data set
 
 Tidy data set contains the average of all feature standard deviation and mean values of the raw dataset. 
-Original variable names were modified in the following way:
+Original variable names were modified in the following ways:
 
  1. Removed parenthesis `()`
  2. Changed `t` prefix to more descriptive `time`
@@ -57,7 +57,7 @@ Original variable names were modified in the following way:
  3. Rowbind the x, y and subject tables for training and test into three new data tables (`mergedx,mergedy,mergedsubj`).
  4. Colbind the merged table and subject table into `merged_sub_act`
  5. Rename the columns in activitylabels (`activityid, activityname`) and mergedsubj (`activityid, subjectid`)
- 6. Merget the two data tables togeher on activityid
+ 6. Merge the two data tables togeher on activityid
  7. Rename the columns in the merged data based on a vector of values from the V2 columns of features
  8. Extract only the columns for mean and std based on a regular expression
  9. Colbind the subject id and activity labels to the extracted columns to get `finalresults`
