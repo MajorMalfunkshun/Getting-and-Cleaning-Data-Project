@@ -31,14 +31,14 @@ Tidy data set contains the average of all feature standard deviation and mean va
 Original variable names were modified in the following way:
 
  1. Removed parenthesis `()`
- 2. Changed t prefix to more descriptive "time"
- 3. Changed f prefix to more descriptive "freq"
+ 2. Changed `t` prefix to more descriptive `time`
+ 3. Changed `f` prefix to more descriptive `freq`
  4. Replaced `BodyBody` with `Body`
  5. Changed column names to all lower case
 
 #### Sample of renamed variables compared to original variable name
 
- Raw data            | Tidy data 
+      Raw data       |      Tidy data 
  --------------------|--------------
  `tBodyAcc-mean()-X` | `time-bodyacc-mean-x`
  `tBodyAcc-mean()-Y` | `time-bodyacc-mean-y`
@@ -46,9 +46,9 @@ Original variable names were modified in the following way:
  `tBodyAcc-std()-X`  | `time-bodyacc-std-x`
  `tBodyAcc-std()-Y`  | `time-bodyacc-std-y`
  `tBodyAcc-std()-Z`  | `time-bodyacc-std-z`
- 'fBodyAcc-mean()-X' | 'freq-bodyacc-mean-x'
- 'fBodyAcc-mean()-Y' | 'freq-bodyacc-mean-y'
- 'fBodyAcc-mean()-Z' | 'freq-bodyacc-mean-z'
+ `fBodyAcc-mean()-X` | `freq-bodyacc-mean-x`
+ `fBodyAcc-mean()-Y` | `freq-bodyacc-mean-y`
+ `fBodyAcc-mean()-Z` | `freq-bodyacc-mean-z`
  
 ## Methodology
  
